@@ -14,12 +14,47 @@
 
 \maketitle
 
-
+While AI Planning and Reinforcement Learning communities focus on similar
+sequential decision-making problems, these communities remain somewhat unaware
+of each other on specific problems, techniques, methodologies, and evaluation.
+%
 We propose to start a new workshop series at ICAPS 2020. This workshop aims to
-bridge the gap between the AI planning and Reinforcement Learning communities
-that focus on similar sequential decision-making problems. Currently, these
-communities sometimes remain somewhat unaware of each other on specific
-problems, techniques, methodologies, and evaluation.
+bridge the gap between the AI Planning and Reinforcement Learning communities,
+facilitate the discussion of differences and similarities in existing techniques,
+and encourage collaboration across the fields. 
+%
+Possible topics of interest include
+\begin{itemize}
+\item How do concepts from each of these fields translate to the other?
+%
+\item Is there an interesting middle ground between capturing action dynamics
+symbolically and model-free RL? Are there interesting domains that exhibit a
+structure that can be partially captured with a symbolic model? How can that be
+exploited in practice?
+%
+\item How to define what constitutes a solution and how to evaluate its quality
+and solution guarantees? How to perform a meaningful comparison of different
+methods?
+%
+\item How to evaluate and compare the computational efficiency of various
+ML/symbolic/hybrid methods? Can we borrow/modify the methodology from the
+learning track of the IPC?
+%
+\item What is the impact of whether the problem is repeatedly solved in
+practice?
+%
+\item What are the settings that are both challenging and attractive for both
+communities? 
+%
+One possible example: Factored-blackbox planning is a planning problem
+formulated as a simulator where states are meaningful factors, and applying
+actions lead to a new state. Some planning algorithms can achieve state of the
+art on IPC benchmarks, where the action description has more information (PDDL).
+Is that setting interesting for the RL community? How should methods be
+evaluated?
+\end{itemize}
+
+
 
 \section*{Workshop Description}
 
@@ -34,41 +69,6 @@ ICAPS 2020 has seen a significant increase in the number of submissions on
 Reinforcement Learning, indicating an increased interest from the RL community
 towards AI Planning.
 
-\section*{Topics of interest / questions}
-
-\begin{itemize}
-\item How do concepts and methods from one field translate to concepts in the other field?
-%
-%
-\item What is the impact of the problem definition for enabling practical applications? Instances of problem definitions are
-%
-\begin{itemize}
-%
-\item the problem to solve is seeing once by the solver
-%
-\item the solver would solve variations of the same problem for a few weeks or years.
-%
-\end{itemize}
-\item What is the right way to evaluate the impact of ML-based methods? 
-%
-\item Is the methodology of the learning track of the IPC useful and attractive for the RL community?
-%
-\item Is there an appealing middle ground between given action dynamics symbolically and model-free RL? 
-%
-\item Are there exciting hybrid domains that have a partial symbolic description of the dynamic? How can that be exploited in practice?
-%
-%
-\item Is there any setting that is both challenging and attractive for both communities? 
-%
-\begin{itemize}
-\item For instance, factored-blackBox planning is a planning problem formulated as a simulator where states are meaningful factors, and applying actions lead to a new state. Some planning algorithms can achieve state of the art in for benchmarks of the IPC, where the action description has more information (PDDL). 
-%
-\item Is that setting appealing for the RL community?
-%
-\item How should methods be evaluated?
-%
-\end{itemize}
-\end{itemize}
 
 \section*{Workshop Format}
 
