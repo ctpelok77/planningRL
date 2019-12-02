@@ -16,17 +16,13 @@
 Let's dump here some ideas or arguments that could make it or not into the proposal.
 One section for person who commented.
 
-\section*{holder}
+\section*{Possible ways of do P\&L -- Scott}
+In short, I see a few distinct ways to do "Planning and Learning":
 
 \begin{itemize}
-\item ...
-\end{itemize}
-
-\section*{Possible invited speakers}
-
-\begin{itemize}
-\item Louis-Martin Rousseau. Constraint Programming and OR. Lately working on using ML for OR/CP problems and solvers.
-\item 
+\item Model-based RL: models are always approximations of the world, but samples in RL presumably come from the real world.  How can the online experience samples improve the model and how can search in the model be used to reduce sample complexity.  Both are major topics studied under the umbrella of model-based RL.
+\item Learn a model and plan in it... what I call "data-driven" planning.  This is less closed-loop than model-based RL, but still poses issues with "unusual" types of models that are difficult to plan with.
+\item Use planning for some aspect of a learning process... not a huge research area, but I've seen a few interesting papers proposing something like this.
 \end{itemize}
 
 \section*{More on Methodology – Hector}
