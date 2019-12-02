@@ -27,9 +27,6 @@ The workshop seeks submissions that are relevant to both Reinforcement Learning
 and Planning. 
 
 
-
-
-
 %\newpage
 
 \section*{Relevance to ICAPS 2020}
@@ -40,27 +37,37 @@ towards AI Planning.
 \section*{Topics of interest / questions}
 
 \begin{itemize}
-\item How do concepts from each of these fields translate to the other?
+\item How do concepts and methods from one field translate to concepts in the other field?
 %
-% \item 
 %
-\item What is the impact of methods on how it would be used in practice? For
-instance, whether the problem to solve is seen only once by the solver, or if
-the solver would solve variations of the same problem for weeks or years. 
+\item What is the impact of the problem definition for enabling practical applications? Instances of problem definitions are
 %
-\item What is the right way of evaluating the impact of ML-based methods? Is the
-methodology used in the learning track of the IPC useful and attractive?
+\begin{itemize}
 %
-\item Is there an interesting middle ground between capturing action dynamics
-symbolically and model-free RL? Are there interesting domains that exhibit a
-structure that can be partially captured with a symbolic model? How can that be
-exploited in practice?
+\item the problem to solve is seeing once by the solver
 %
-\item Factored-blackbox planning is a planning problem formulated as a simulator
-where states are meaningful factors, and applying actions lead to a new state.
-Some planning algorithms can achieve state of the art on IPC benchmarks, where
-the action description has more information (PDDL). Is that setting interesting
-for the RL community? How should methods be evaluated?
+\item the solver would solve variations of the same problem for a few weeks or years.
+%
+\end{itemize}
+\item What is the right way to evaluate the impact of ML-based methods? 
+%
+\item Is the methodology of the learning track of the IPC useful and attractive for the RL community?
+%
+\item Is there an appealing middle ground between given action dynamics symbolically and model-free RL? 
+%
+\item Are there exciting hybrid domains that have a partial symbolic description of the dynamic? How can that be exploited in practice?
+%
+%
+\item Is there any setting that is both challenging and attractive for both communities? 
+%
+\begin{itemize}
+\item For instance, factored-blackBox planning is a planning problem formulated as a simulator where states are meaningful factors, and applying actions lead to a new state. Some planning algorithms can achieve state of the art in for benchmarks of the IPC, where the action description has more information (PDDL). 
+%
+\item Is that setting appealing for the RL community?
+%
+\item How should methods be evaluated?
+%
+\end{itemize}
 \end{itemize}
 
 \section*{Workshop Format}
@@ -80,29 +87,25 @@ informed decisions, but should the need arise, we can call on additional
 reviewing expertise.
 
 
-
 \section*{Diversity}
-
 
 
 \section*{Organization}
 
+% TODO: are we adding a PC?
+% If so, let's split people.
+
 \begin{itemize}
 
-\item \href{placeholder}{Alan Fern}
-  (\href{mailto:placeholder}{placeholder})\\
+\item \href{http://web.engr.oregonstate.edu/~afern/}{Alan Fern}
+  (\href{mailto:Alan.Fern@oregonstate.edu}{Alan.Fern@oregonstate.edu})\\
   
+\item \href{https://www.upf.edu/web/vgomez}{Vicen\c{c} G\'{o}mez}
+  (\href{mailto:vicen.gomez@upf.edu}{vicen.gomez@upf.edu})\\
 
-
-\item \href{placeholder}{Vicen\c{c} G\'{o}mez}
-  (\href{mailto:placeholder}{placeholder})\\
-
-
-
-\item \href{placeholder}{Anders Jonsson}
-  (\href{mailto:placeholder}{placeholder})\\
-  
-  
+\item \href{https://www.upf.edu/web/anders-jonsson}{Anders Jonsson}
+  (\href{mailto:anders.jonsson@upf.edu}{anders.jonsson@upf.edu})\\
+    
 \item \href{https://resedit.watson.ibm.com/researcher/view.php?person=ibm-Michael.Katz1}{Michael Katz}
  (\href{mailto:michael.katz1@ibm.com}{michael.katz1@ibm.com})\\
  Michael is a researcher at IBM T.J. Watson Research Center, NY, USA. His
@@ -112,9 +115,18 @@ reviewing expertise.
  He was a co-organizer of the 2011, 2013, 2014, 2015, 2016, and 2018 H(S)DIP
  workshops.
 
-
 \item \href{http://hectorpalacios.net/}{Hector Palacios}
-  (\href{mailto:hectorpal@gmail.com}{hectorpal@gmail.com})\\
+  (\href{mailto:hectorpal@elementai.com}{hectorpal@elementai.com})\\
+Hector is an Applied Research Scientist at Element AI, a start-up specialized in
+creating AI-based products. In the industry, Hector has worked in NLP and
+Vision. Lately,  he works on the use of AI reasoning methods in the context of
+ML-based applications. In academia, Hector work in planning under incomplete
+information. He holds a Ph.D. in Computer Science from Universitat Pompeu Fabra
+(2009, Barcelona/Spain). His dissertation received the 2010 Best Dissertation
+Award by ICAPS and an honourable Mention at the 2009 Artificial Intelligence
+Dissertation Awards by ECCAI. Later on, he was awarded the IJCAI-JAIR Best Paper
+Prize 2012 to an “outstanding paper published in JAIR in the preceding five
+calendar years” alongside his Ph.D. advisor Hector Geffner.   
 
 \item \href{http://d3m.mie.utoronto.ca}{Scott Sanner}
   (\href{mailto:ssanner@mie.utoronto.ca}{ssanner@mie.utoronto.ca})\\
@@ -128,7 +140,11 @@ Transport Research Board.  Scott has served as Program Co-chair for the 26th
 International Conference on Automated Planning and Scheduling (ICAPS 2016) and
 previously organized workshops at AAAI (2016, 2017), ICAPS (2010, 2012, 2015),
 NIPS (2011), and EWRL (2011).
-  
+
+% % Agreed to review
+% % Does not want to be an organizer
+% \item \href{https://sites.google.com/a/ualberta.ca/rickvalenzano/}{Rick Valenzano}
+%   (\href{mailto:rick.valenzano@elementai.com}{rick.valenzano@elementai.com})\\
 
 
 % \item \href{placeholder}{placeholder}
@@ -152,8 +168,9 @@ participation at first. We estimate an audience of about 15 participants.
   \item Leslie Kaelbling
   \item Marc Bellemare
   \item Murray Shanahan
-  \item Peter Stone 
+  \item Peter Stone
   \item George Konidaris
+  \item Louis-Martin Rousseau %. Constraint Programming and OR. Lately working on using ML for OR/CP problems and solvers.
 \end{itemize}
 
 \end{document}
