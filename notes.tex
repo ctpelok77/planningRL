@@ -1,0 +1,99 @@
+\documentclass[10pt]{article}
+
+\newcommand{\commentout}[1]{}
+\usepackage[colorlinks=true,urlcolor=blue,citecolor=blue,pdfstartview=FitH]{hyperref}
+
+
+\begin{document}
+
+\title{Notes for ICAPS 2020 Workshop Proposal}
+\date{}
+
+\author{}
+
+\maketitle
+
+Let's dump here some ideas or arguments that could make it or not into the proposal.
+One section for person who commented.
+
+\section*{holder}
+
+\begin{itemize}
+\item ...
+\end{itemize}
+
+\section*{Possible invited speakers}
+
+\begin{itemize}
+\item Louis-Martin Rousseau. Constraint Programming and OR. Lately working on using ML for OR/CP problems and solvers.
+\item 
+\end{itemize}
+
+\section*{Questions already in proposal – Hector}
+
+Schematic, easier to pick and choose
+
+\begin{itemize}
+\item How do concepts and methods from one field translate to concepts in the other field?
+\item What is the impact of the problem definition for enabling practical applications? Instances of problem definitions are
+\begin{itemize}
+\item the problem to solve is seeing once by the solver
+\item the solver would solve variations of the same problem for a few weeks or years.
+\end{itemize}
+\item What is the right way to evaluate the impact of ML-based methods? 
+\item Is the methodology of the learning track of the IPC useful and attractive for the RL community?
+\item Is there an appealing middle ground between given action dynamics symbolically and model-free RL? 
+\item Are there exciting hybrid domains that have a partial symbolic description of the dynamic? How can that be exploited in practice?
+\item Is there any setting that is both challenging and attractive for both communities? 
+\begin{itemize}
+\item For instance, factored-blackBox planning is a planning problem formulated as a simulator where states are meaningful factors, and applying actions lead to a new state. Some planning algorithms can achieve state of the art in for benchmarks of the IPC, where the action description has more information (PDDL). 
+\item Is that setting appealing for the RL community?
+\item How should methods be evaluated?
+\end{itemize}
+\end{itemize}
+
+
+\section*{More on Methodology – Hector}
+
+For this one, I'd like to emphasize the problems and methodology.
+
+A big confusion, for me, it's the correlate of basic RL methods is not planning but search, as in SOCS.
+By using function approximation, RL is bypassing the scalability
+by assuming that similarly approximated states would have the same policy.
+DeepRL, in turn, bypass the representation problem.
+
+In contrast, the dynamic of planning problems is known.
+
+So, we could say to an RL audience that Planning is Game-Playing –that they know– but with
+\begin{itemize}
+\item single agent
+\item using the same method for different games.
+\item must win each game, no average behaviour. 
+\end{itemize}
+
+
+We could say to a Planning audience that RL is like search –that they know– but with
+\begin{itemize}
+\item the state structure and dynamic is unknown, 
+\item you get the try again from other states,
+\item finally, you can fail to get a goal are truly evaluated on the average performance of a new set of chances.
+\end{itemize}
+
+By decomposing the problems and methods, I think we should be able to isolate
+variations of RL that are more appealing to the planning community and viceversa.
+We should be able to detect other fertil areas in need of effective methods.
+
+For instance, consider black-box planing (no PDDL but a simulator, like required by novelty-based algorithms).
+Even for that case, RL and Planning are not the same.
+How can we even the evaluation so average behaviour + approximation of RL is useful?
+
+A related question has some people in OR trying to use ML:
+How to evaluate ML methods relevant to solving a single instance of an OR problem?
+
+\section*{Beyond planning and RL – Hector}
+
+I think  that the gap to be reduced goes all the way into factored spaces and search. For instance, the importance –and lack of– of dead-ends is also crucial in search and –perhaps surprisingly– in ML for factored space. For example, in NLP entity linking/extraction the text is to be connected with entities, but sometimes the output does not make sense. The problem extends into ML with rich factored outputs, or that secretly includes such structures –like NLP language generation. 
+
+
+
+\end{document}
