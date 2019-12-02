@@ -37,27 +37,37 @@ towards AI Planning.
 \section*{Topics of interest / questions}
 
 \begin{itemize}
-\item How do concepts from each of these fields translate to the other?
+\item How do concepts and methods from one field translate to concepts in the other field?
 %
-% \item 
 %
-\item What is the impact of methods on how it would be used in practice? For
-instance, whether the problem to solve is seen only once by the solver, or if
-the solver would solve variations of the same problem for weeks or years. 
+\item What is the impact of the problem definition for enabling practical applications? Instances of problem definitions are
 %
-\item What is the right way of evaluating the impact of ML-based methods? Is the
-methodology used in the learning track of the IPC useful and attractive?
+\begin{itemize}
 %
-\item Is there an interesting middle ground between capturing action dynamics
-symbolically and model-free RL? Are there interesting domains that exhibit a
-structure that can be partially captured with a symbolic model? How can that be
-exploited in practice?
+\item the problem to solve is seeing once by the solver
 %
-\item Factored-blackbox planning is a planning problem formulated as a simulator
-where states are meaningful factors, and applying actions lead to a new state.
-Some planning algorithms can achieve state of the art on IPC benchmarks, where
-the action description has more information (PDDL). Is that setting interesting
-for the RL community? How should methods be evaluated?
+\item the solver would solve variations of the same problem for a few weeks or years.
+%
+\end{itemize}
+\item What is the right way to evaluate the impact of ML-based methods? 
+%
+\item Is the methodology of the learning track of the IPC useful and attractive for the RL community?
+%
+\item Is there an appealing middle ground between given action dynamics symbolically and model-free RL? 
+%
+\item Are there exciting hybrid domains that have a partial symbolic description of the dynamic? How can that be exploited in practice?
+%
+%
+\item Is there any setting that is both challenging and attractive for both communities? 
+%
+\begin{itemize}
+\item For instance, factored-blackBox planning is a planning problem formulated as a simulator where states are meaningful factors, and applying actions lead to a new state. Some planning algorithms can achieve state of the art in for benchmarks of the IPC, where the action description has more information (PDDL). 
+%
+\item Is that setting appealing for the RL community?
+%
+\item How should methods be evaluated?
+%
+\end{itemize}
 \end{itemize}
 
 \section*{Workshop Format}
@@ -83,7 +93,7 @@ reviewing expertise.
   \item Leslie Kaelbling
   \item Marc Bellemare
   \item Murray Shanahan
-  \item Peter Stone 
+  \item Peter Stone
   \item George Konidaris
 \end{itemize}
 
