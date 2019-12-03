@@ -6,7 +6,7 @@
 
 \begin{document}
 
-\title{Migrated to Overleaf. Please continue there.\\ \vspace*{0.7cm}ICAPS 2020 Workshop on \\ Bridging the Gap Between AI Planning and Reinforcement Learning (PRL)\\ \vspace*{0.7cm} Workshop Proposal
+\title{ICAPS 2020 Workshop on \\ Bridging the Gap Between AI Planning and Reinforcement Learning (PRL)\\ \vspace*{0.7cm} Workshop Proposal
 }
 \date{}
 
@@ -14,47 +14,9 @@
 
 \maketitle
 
-While AI Planning and Reinforcement Learning communities focus on similar
-sequential decision-making problems, these communities remain somewhat unaware
-of each other on specific problems, techniques, methodologies, and evaluation.
-%
+
 We propose to start a new workshop series at ICAPS 2020. This workshop aims to
-bridge the gap between the AI Planning and Reinforcement Learning communities,
-facilitate the discussion of differences and similarities in existing techniques,
-and encourage collaboration across the fields. 
-%
-Possible topics of interest include
-\begin{itemize}
-\item How do concepts from each of these fields translate to the other?
-%
-\item Is there an interesting middle ground between capturing action dynamics
-symbolically and model-free RL? Are there interesting domains that exhibit a
-structure that can be partially captured with a symbolic model? How can that be
-exploited in practice?
-%
-\item How to define what constitutes a solution and how to evaluate its quality
-and solution guarantees? How to perform a meaningful comparison of different
-methods?
-%
-\item How to evaluate and compare the computational efficiency of various
-ML/symbolic/hybrid methods? Can we borrow/modify the methodology from the
-learning track of the IPC?
-%
-\item What is the impact of whether the problem is repeatedly solved in
-practice?
-%
-\item What are the settings that are both challenging and attractive for both
-communities? 
-%
-One possible example: Factored-blackbox planning is a planning problem
-formulated as a simulator where states are meaningful factors, and applying
-actions lead to a new state. Some planning algorithms can achieve state of the
-art on IPC benchmarks, where the action description has more information (PDDL).
-Is that setting interesting for the RL community? How should methods be
-evaluated?
-\end{itemize}
-
-
+bridge the gap between the AI planning and Reinforcement Learning communities that focus on similar sequential decision-making problems. Currently, these communities remain somewhat unaware of each other on specific problems, techniques,  methodologies, and evaluation.
 
 \section*{Workshop Description}
 
@@ -62,13 +24,43 @@ The workshop seeks submissions that are relevant to both Reinforcement Learning
 and Planning. 
 
 
+
+
+
 %\newpage
 
 \section*{Relevance to ICAPS 2020}
 ICAPS 2020 has seen a significant increase in the number of submissions on
 Reinforcement Learning, indicating an increased interest from the RL community
-towards AI Planning.
+in AI Planning.
 
+\section*{Topics of interest / questions}
+
+\begin{itemize}
+\item How do concepts from each of these fields translate to the other?
+%
+% \item 
+%
+\item What considerations should lead a practitioner to favor techniques from one community over another?  For
+instance, whether the problem to solve is seen only once by the solver, or if the solver would
+solve variations of the same problem for weeks or years is one such consideration.
+%\item What is the impact of methods on how it would be used in practice? For
+%instance, whether the problem to solve is seen only once by the solver, or if the solver would
+%solve variations of the same problem for weeks or years. 
+%
+\item What is the right way of evaluating the impact of ML-based methods? Is the
+methodology used in the learning track of the IPC useful and attractive?
+%
+\item Is there an interesting middle ground between capturing action dynamics
+symbolically and model-free RL? Are there interesting domains that exhibit a
+structure that can be partially captured with a symbolic model? How can that be
+exploited in practice?
+%
+\item Factored-blackbox planning is a planning problem formulated as a simulator
+where states are meaningful factors, and applying actions lead to a new state.
+Some planning algorithms can achieve state of the art on ICP benchmarks, where the action description has more information (PDDL). Is that setting
+interesting for the RL community? How should methods be evaluated?
+\end{itemize}
 
 \section*{Workshop Format}
 
@@ -86,26 +78,12 @@ Between us, we have sufficient competence in the topic of the workshop to make
 informed decisions, but should the need arise, we can call on additional
 reviewing expertise.
 
-
-\section*{Diversity}
-
-
-\section*{Organization}
-
-% TODO: are we adding a PC?
-% If so, let's split people.
+\section*{Organizers}
 
 \begin{itemize}
 
-\item \href{http://web.engr.oregonstate.edu/~afern/}{Alan Fern}
-  (\href{mailto:Alan.Fern@oregonstate.edu}{Alan.Fern@oregonstate.edu})\\
-  
-\item \href{https://www.upf.edu/web/vgomez}{Vicen\c{c} G\'{o}mez}
-  (\href{mailto:vicen.gomez@upf.edu}{vicen.gomez@upf.edu})\\
 
-\item \href{https://www.upf.edu/web/anders-jonsson}{Anders Jonsson}
-  (\href{mailto:anders.jonsson@upf.edu}{anders.jonsson@upf.edu})\\
-    
+
 \item \href{https://resedit.watson.ibm.com/researcher/view.php?person=ibm-Michael.Katz1}{Michael Katz}
  (\href{mailto:michael.katz1@ibm.com}{michael.katz1@ibm.com})\\
  Michael is a researcher at IBM T.J. Watson Research Center, NY, USA. His
@@ -115,18 +93,9 @@ reviewing expertise.
  He was a co-organizer of the 2011, 2013, 2014, 2015, 2016, and 2018 H(S)DIP
  workshops.
 
+
 \item \href{http://hectorpalacios.net/}{Hector Palacios}
-  (\href{mailto:hectorpal@elementai.com}{hectorpal@elementai.com})\\
-Hector is an Applied Research Scientist at Element AI, a start-up specialized in
-creating AI-based products. In the industry, Hector has worked in NLP and
-Vision. Lately,  he works on the use of AI reasoning methods in the context of
-ML-based applications. In academia, Hector work in planning under incomplete
-information. He holds a Ph.D. in Computer Science from Universitat Pompeu Fabra
-(2009, Barcelona/Spain). His dissertation received the 2010 Best Dissertation
-Award by ICAPS and an honourable Mention at the 2009 Artificial Intelligence
-Dissertation Awards by ECCAI. Later on, he was awarded the IJCAI-JAIR Best Paper
-Prize 2012 to an “outstanding paper published in JAIR in the preceding five
-calendar years” alongside his Ph.D. advisor Hector Geffner.   
+  (\href{mailto:hectorpal@gmail.com}{hectorpal@gmail.com})\\
 
 \item \href{http://d3m.mie.utoronto.ca}{Scott Sanner}
   (\href{mailto:ssanner@mie.utoronto.ca}{ssanner@mie.utoronto.ca})\\
@@ -140,37 +109,29 @@ Transport Research Board.  Scott has served as Program Co-chair for the 26th
 International Conference on Automated Planning and Scheduling (ICAPS 2016) and
 previously organized workshops at AAAI (2016, 2017), ICAPS (2010, 2012, 2015),
 NIPS (2011), and EWRL (2011).
-
-% % Agreed to review
-% % Does not want to be an organizer
-% \item \href{https://sites.google.com/a/ualberta.ca/rickvalenzano/}{Rick Valenzano}
-%   (\href{mailto:rick.valenzano@elementai.com}{rick.valenzano@elementai.com})\\
+  
 
 
-% \item \href{placeholder}{placeholder}
-%   (\href{mailto:placeholder}{placeholder})\\
+\item \href{www.rickvalenzano.com}{Rick Valenzano}
+  (\href{mailto:rick.valenzano@elementai.com}{rick.valenzano@elementai.com})\\
+  
+Rick Valenzano is an Applied Research Scientist at Element AI where he develops sequential decision-making approaches for financial applications. His research focuses on understanding different sequential decision-making methods, such as those used in reinforcement learning, automated planning, heuristic search, and game-playing systems. Rick holds a PhD in Computing Science at the University of Alberta, and was also a postdoctoral fellow in the Department of Computer Science at the University of Toronto. 
+
+\item \href{placeholder}{placeholder}
+  (\href{mailto:placeholder}{placeholder})\\
+
+\item \href{placeholder}{placeholder}
+  (\href{mailto:placeholder}{placeholder})\\
 
   
 \end{itemize}
 
-\section*{Estimated Interest}
+\section*{Audience}
 
 The audience of this workshop is researchers that are interested in both
 planning and reinforcement learning.
 %
 Based on our experience with new workshops, we expect to see a moderate
 participation at first. We estimate an audience of about 15 participants.  
-
-\subsection*{Possible Invited Speakers}
-
-\begin{itemize}
-  \item Hector Geffner
-  \item Leslie Kaelbling
-  \item Marc Bellemare
-  \item Murray Shanahan
-  \item Peter Stone
-  \item George Konidaris
-  \item Louis-Martin Rousseau %. Constraint Programming and OR. Lately working on using ML for OR/CP problems and solvers.
-\end{itemize}
 
 \end{document}
