@@ -1,0 +1,70 @@
+\documentclass[letterpaper]{article}
+\usepackage{times}
+\usepackage{helvet}
+\usepackage{courier}
+
+\usepackage{pdfpages}
+\usepackage{graphicx}
+
+\usepackage{geometry}
+\geometry{letterpaper,nohead,total={7in, 9in}}
+
+
+\newcommand{\pp}[3]{{
+    \addcontentsline{toc}{section}{#3\\ \textnormal{\textit{#2}}}
+    \includepdf[pages=-,pagecommand={\thispagestyle{plain}}]{%
+        submissions/PRL2020_paper_#1.pdf}
+}}
+
+
+\begin{document}
+\pagenumbering{roman}
+\includepdf{template/titlepage.pdf}
+\cleardoublepage
+
+\vspace*{5mm}
+\includegraphics[trim={15pt 0pt 0pt 0pt}]{template/organization.pdf}
+
+
+
+
+
+
+\vspace*{14mm}
+\noindent
+\textbf{Alan Fern}\\ 
+Oregon State University, USA\\[1em]
+\textbf{Vicen\c{c} G\'{o}mez}\\
+Universitat Pompeu Fabra, Barcelona, Spain\\[1em]
+\textbf{Anders Jonsson}\\
+Universitat Pompeu Fabra, Barcelona, Spain\\[1em]
+\textbf{Michael Katz}\\
+IBM Research AI, NY, USA\\[1em]
+\textbf{Hector Palacios}\\
+Element AI, Montreal, Canada\\[1em]
+\textbf{Scott Sanner}\\
+University of Toronto, Toronto, Canada
+
+
+
+
+\clearpage
+
+\vspace*{5mm}
+\includegraphics[trim={15pt 0pt 0pt 0pt}]{template/preface.pdf}
+\input{preface}
+
+\clearpage
+
+\vspace*{5mm}
+\includegraphics[trim={15pt 0pt 0pt 0pt}]{%
+ template/tableofcontents.pdf}
+
+\renewcommand\contentsname{}
+\tableofcontents
+
+\cleardoublepage
+\pagenumbering{arabic}
+\input{paperslist}
+
+\end{document}
